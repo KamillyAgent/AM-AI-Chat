@@ -1,49 +1,37 @@
 ```
-# Compiled and build artifacts
-*.pyc
-__pycache__/
-*.o
-*.obj
-*.so
-*.dll
-*.exe
-*.class
-*.out
+# WordPress plugin specific ignores
+am-chat/*/wp-content/plugins/am-chat/
+am-chat/*/
 
-# Dependencies
-node_modules/
-venv/
-.venv/
-.env
-.env.local
-.env.*
+# If there are any build artifacts or temp files in the plugin directory
+am-chat/*.log
+am-chat/*.tmp
+am-chat/*~
+am-chat/.*.swp
 
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-*.swo
+# Backup files
+*.bak
+*.backup
+*.orig
 
-# Editors
-.vscode/
-.idea/
+# IDE specific files in plugin directory
+am-chat/.vscode/
+am-chat/.idea/
+am-chat/*.iml
+am-chat/.project
+am-chat/.settings/
 
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
+# OS specific files in plugin directory
+am-chat/.DS_Store
+am-chat/Thumbs.db
+am-chat/desktop.ini
 
-# Distribution / packaging
-dist/
-build/
-*.tar.gz
-*.zip
+# PHP related (if applicable to your setup)
+am-chat/*.php~
+am-chat/.*.php.swp
 
-# Environment specific
-.env*
-.env.local
-
-# OS generated files
-.DS_Store
-Thumbs.db
-```.next/
+# Cache directories that might be created
+am-chat/cache/
+am-chat/tmp/
+am-chat/temp/
+```
